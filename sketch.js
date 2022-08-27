@@ -36,5 +36,5 @@ function draw (){
       strokeWeight (4) ;
       point (p.x , p.y );
     }
-
 }
+    

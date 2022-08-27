@@ -83,13 +83,5 @@ class QuadTree {
             point(p.x, p.y);
         }
     }
-
-class QuadTree {
-   // ...
-  query (range , found ){
-}
-
-
-
-
+  
 }
