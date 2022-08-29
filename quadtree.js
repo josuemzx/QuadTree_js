@@ -50,6 +50,23 @@ class QuadTree {
     }
 
     insert(point) {
+        
+                if (!this.boundary.contains(point)){
+             return ;
+        }
+        if (this.points.length < this.capacity){
+             this.points.push(point);
+        }
+
+        else{
+            if(!this.divided){
+                this.subdivide();
+            }
+            this.northeast.insert(point);
+            this.northwest.insert(point);
+            this.southeast.insert(point);
+            this.southwest.insert(point);
+        }
 // Algoritmo
 // 1: Si el punto no esta en los limites ( boundary ) del quadtree Return
 
