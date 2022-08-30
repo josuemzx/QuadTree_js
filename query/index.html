@@ -1,0 +1,60 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title> QuadTree </title>
+    <script src="../js/p5.min.js"> </script>
+    <script src="quadtree.js"> </script>
+    <script src="sketch.js"> </script>
+
+    <style>
+        body{
+            font-family: 'Lato', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            padding: 2px;
+        }
+        .grid-container>div {
+            text-align: center;
+            padding: 2px 0;
+        }
+        hr {
+            border-color: #0091e6;
+        }
+        a:link {
+            color: #0091e6;
+        }
+
+        a:visited {
+            color: blue;
+        }
+        a:hover {
+            color: cadetblue;
+        }
+    </style>
+</head>
+<body bgcolor="#272a33" background="../img/fondo1.png">
+<a href="../index.html">Visualizar puntos</a> <a href="../insertar/index.html">Insertar puntos con mouse</a>
+<hr>
+<div class="grid-container">
+
+    <div class="grid-item" style="vertical-align: middle;">
+    </div>
+    <div class="grid-item">
+        <p style="font-size: 28px; font-weight:5px bold; color:#0091e6">Quad Tree<br/>
+        <p style="font-size: 16px; font-weight:20px bold; color:#ffffff">Maestr&iacute;a en Ciencias de la Computaci&oacute;n - Algoritmos y Estructura de Datos</p>
+        <p style="font-size: 16px; font-weight:20px bold; color:#ffffff">Hacer Query con Mouse - QuadTree</p>
+    </div>
+    <div class="grid-item">
+        <p>
+        </p>
+    </div>
+    <div class="grid-item">&nbsp;</div>
+    <div class="grid-item"><div id="QuadTreeCanvas"></div></div>
+    <div class="grid-item">&nbsp;</div>
+</div>
+</body>
+
+</html>
