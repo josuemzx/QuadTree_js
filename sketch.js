@@ -1,7 +1,7 @@
 function setup() {
-    let quadCanvas = createCanvas(500, 500);
+    let quadCanvas = createCanvas(400, 400);
     quadCanvas.parent("QuadTreeCanvas");
-    let boundary = new Rectangle(250, 250, 250, 250);
+    let boundary = new Rectangle(2050, 200, 200, 200);
     qt = new QuadTree(boundary, 4);
 
     console.log(qt);
